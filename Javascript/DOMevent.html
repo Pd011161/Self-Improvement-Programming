@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-DOMevent.css" />
+    <title>DOMevent</title>
+  </head>
+  <body onload="welcome()">
+    <div id="box">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
+        exercitationem iusto inventore officiis doloremque, quas quod quis a ab
+        tenetur quasi quaerat repellat facere fuga dolorem voluptates
+        aspernatur, cumque enim.
+      </p>
+    </div>
+    <div class="itinp" style="padding-top:5px;">
+        <input type="text" name="" id="inp1" placeholder="name" onfocus="delinp()" onblur="addinp()" onkeydown="shwkey()">
+       
+        <select id="sel" onchange="ch()">
+            <option value="หญิง" id="FE" >male</option>
+            <option value="ชาย" id="M">female</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <button id="bt" onmouseover="bt(this)" onmouseout="bto(this)">SUBMIT</button>
+    </div>
+   
+    
+    <script src="DOMevent.js"></script>
+  </body>
+</html>
