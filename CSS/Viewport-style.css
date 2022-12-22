@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background:rgb(69, 68, 68);
+    color:white;
+    height:100vh;
+    width:100vw;
+    text-align: center;
+    padding:2rem;
+    padding-top:15rem;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin: 1rem o;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background:white;
+    padding:0.75rem 2rem;
+    margin-top: 10px;
+    border-radius: 15px;
+}

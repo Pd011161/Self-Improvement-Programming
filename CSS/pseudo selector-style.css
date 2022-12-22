@@ -1,0 +1,35 @@
+*{
+    padding: 0.25rem;
+    margin: 0.25rem;
+    list-style: none;
+}
+
+/* ul{}
+
+li:first-child{
+    background: red;
+}
+
+li:last-child{
+    background:yellow;
+}
+
+li:nth-child(3){
+    background:green;
+}
+
+li:nth-last-child(3){
+    background:blueviolet;
+} */
+
+li:nth-child(3n+7){ /* 3n คือนับไปทีีละ 3 ส่วน +7 คือ เริ่มที่ 7*/
+    background:rgb(43, 183, 226);
+}
+
+li:nth-child(odd){
+    background: greenyellow;
+}
+
+li:nth-child(even){
+    background:orange;
+}

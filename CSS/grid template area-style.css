@@ -1,0 +1,35 @@
+.container{
+    display: grid;
+    /* grid-template-columns: 5fr 4fr;
+    grid-template-rows: 3fr 7fr 1fr; 
+    grid-template-areas: 
+    'header header'  
+    'sidebar content' 
+    'footer footer' */
+    grid-template: 
+    'header header' 3fr  
+    'sidebar content' 7fr 
+    'footer footer' 1fr
+   / 5fr 4fr;
+   grid-gap: 2px;
+}
+
+.header{
+    background: rgb(242, 136, 136);
+    grid-area: header;
+}
+
+.content{
+    background:rgb(155, 240, 155);
+    grid-area: content;
+}
+
+.footer{
+    background: rgb(99, 179, 236);
+    grid-area: footer;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background:rgb(236, 180, 76);
+}

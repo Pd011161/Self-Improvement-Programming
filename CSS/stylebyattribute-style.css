@@ -1,0 +1,18 @@
+
+a{
+    background: orange;
+    text-decoration: none;
+}
+
+a[target]{
+    background:red;
+    color: white;
+}
+
+a[target='_blank']{
+    background:black;
+}
+
+a[target='_self']{
+    background: rgb(237, 69, 181);
+}

@@ -1,0 +1,12 @@
+div p{
+    background: rgb(117, 199, 117);
+}
+
+p{
+    background: rgb(101, 218, 236);
+}
+
+div>p{
+    color: rgb(250, 252, 115);
+}
+

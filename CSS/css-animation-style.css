@@ -1,0 +1,25 @@
+body{
+    background: #333;
+}
+
+.box{
+    background: white;
+    width: 100px;
+    height: 100px;
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes animate1{
+    from{
+        width: 100px;
+    }
+    to {
+        width: 400px;
+        background: red;
+    }
+}
+

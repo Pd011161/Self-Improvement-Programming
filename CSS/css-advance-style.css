@@ -1,0 +1,20 @@
+:root{
+    --box:1px solid red;
+    --team:gray;
+}
+
+.box1{
+    border: var(--box);
+}
+
+.box2{
+    border: 1px solid black;
+}
+
+.box3{
+    border: 1px solid black;
+}
+
+body{
+    background: var(--team);
+}

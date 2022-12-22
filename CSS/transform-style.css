@@ -1,0 +1,17 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 2px solid black;
+    margin: 200px;
+    /* ------------------------ */
+    transform: translate(100px,100px);
+
+    transform: rotate(20deg); /* rotate X,Y */
+
+    transform: scale(2,3);
+
+    transform: skew(20deg,20deg); /* skewX,Y*/
+}
+
+

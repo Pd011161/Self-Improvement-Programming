@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        div{
+            border:1px dashed black;
+
+        }
+        img{
+            width:200px;
+        }
+        img.a{
+            visibility:hidden;    /* = ซ่อน */
+            /* visibility:visible; */  /* = แสดง */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class="a" src="img/1.jpeg">
+        <img class="b" src="img/2.jpeg">
+    </div>
+</body>
+</html>

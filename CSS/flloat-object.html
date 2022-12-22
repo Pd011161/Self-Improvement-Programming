@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float-object-css</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        img{
+            width:150px;
+        }
+        .a img{
+            float: left;
+        }
+        .b img{
+            float: right;
+        }
+        .c img{
+            float:none;
+        }
+
+
+        .container {
+            width:960;
+            margin: 30px auto;
+        }
+        .out{
+            line-height: 1.4em;
+        }
+        .box{
+            background-color:rgb(231, 129, 129);
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #box2{
+            float:left;
+            width: 70%;
+        }
+        #box3{
+            float:right;
+            width: 30%;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <p>
+        <img src="img/1.jpeg" />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. At officiis
+        culpa laboriosam repellat distinctio reprehenderit cum, illo ullam sunt
+        harum natus, rerum nam. Illo unde labore modi deleniti ea similique.
+      </p>
+    </div>
+    <div class="b">
+        <p>
+          <img src="img/2.jpeg" />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At officiis
+          culpa laboriosam repellat distinctio reprehenderit cum, illo ullam sunt
+          harum natus, rerum nam. Illo unde labore modi deleniti ea similique.
+        </p>
+    </div>
+    <div class="c">
+        <p>
+          <img src="https://www.prototype-ui.com/wp-content/uploads/2017/03/pERnQ5-772x347.jpg" />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. At officiis
+          culpa laboriosam repellat distinctio reprehenderit cum, illo ullam sunt
+          harum natus, rerum nam. Illo unde labore modi deleniti ea similique.
+        </p>
+    </div>
+
+    <hr>
+    <div class="out">
+        <div class="container">
+            <div class="box" id="box1">
+                <h1>Title1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam dolorem voluptatem voluptatibus quasi explicabo modi delectus, laborum repellendus animi ratione accusantium quos fugit blanditiis voluptatum consequatur voluptate, accusamus provident.</p>
+            </div>
+
+            <div class="box" id="box2">
+                <h1>Title2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam dolorem voluptatem voluptatibus quasi explicabo modi delectus, laborum repellendus animi ratione accusantium quos fugit blanditiis voluptatum consequatur voluptate, accusamus provident.</p>
+            </div>
+
+            <div class="box" id="box3">
+                <h1>Title3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam dolorem voluptatem voluptatibus quasi explicabo modi delectus, laborum repellendus animi ratione accusantium quos fugit blanditiis voluptatum consequatur voluptate, accusamus provident.</p>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="box" id="box4">
+                <h1>Title4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam dolorem voluptatem voluptatibus quasi explicabo modi delectus, laborum repellendus animi ratione accusantium quos fugit blanditiis voluptatum consequatur voluptate, accusamus provident.</p>
+            </div>
+
+        </div>
+    </div>
+  </body>
+</html>

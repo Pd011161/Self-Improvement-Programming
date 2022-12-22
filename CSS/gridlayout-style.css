@@ -1,0 +1,19 @@
+
+
+.container{
+    display: grid;
+    grid-template-rows: 80px 200px 300px;
+    grid-template-columns: repeat(3,200px); /*repeatทำซำ้*/
+
+}
+
+
+.item{
+    text-align: center ;
+    padding: 3rem;
+    border-top: 1px solid rgb(253, 253, 253);
+    background-color: orange;
+    font-size: 1.3rem;
+    font-weight: bold; 
+}
+
