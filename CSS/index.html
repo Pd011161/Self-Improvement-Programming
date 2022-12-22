@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pd-CSS-19/04/2022</title>
+    <style>
+        /* CSS Selector */
+        /* การใส้CSSแบบแยกส่วน */
+        h2{
+            color: blue; /* color =  สี*/
+            font-size: 40px; /* font-size = ขนาดตัวหนังสือ */
+        }
+
+        .title{
+            color: green; /* color =  สี*/
+            font-size: 30px; /* font-size = ขนาดตัวหนังสือ */
+        }
+        #title{
+            color: rgb(162, 10, 238); /* color =  สี*/
+            font-size: 20px; /* font-size = ขนาดตัวหนังสือ */
+        }
+        /* การใส่CSSทีเดียวหลายส่วน */
+        #title , #title , h2{ /* ใส่CSSในclass title , id title , h2 */
+            font-style: italic; /* font-style = รูปแบบตัวหนังสือ , italic = ตัวเอียง */
+        }
+        /* การใส่CSSที่ p class message */
+        p.message {
+            color: rgb(232, 167, 4); /* color =  สี*/
+        }
+        /* การใส่CSSที่ h5 class message */ 
+        h5.message {
+            color:red; /* color =  สี*/
+        }
+        /* การใส่CSSในทุกตัวที่มี class message */
+        .message {
+            font-weight: bolder; /* font-weight = ความหนาของตัวหนังสือ , bolder = ตัวหนา*/
+            font-size: 20px; /* font-size = ขนาดตัวหนังสือ */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 align="center"><u>CSS3 Selector</u></h1>
+    <h2>Pd</h2>
+    <p class="title">CSS3</p>
+    <p id="title">CSS</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae quaerat, neque, reprehenderit provident nemo autem quam magni quibusdam sed, recusandae fugit reiciendis repudiandae soluta id. Earum vel aliquam repellendus praesentium?</p>
+    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam laudantium quos fuga, maxime, nulla voluptates eaque iusto optio cum adipisci omnis ab blanditiis sapiente autem quod quaerat laborum hic velit!</p>
+    <h5 class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, assumenda rerum pariatur omnis, ratione nesciunt laborum eveniet iure doloremque fugit eos perferendis! Accusantium laboriosam maxime error dolores corporis officia iusto?</h5>
+    <hr>
+    
+</body>
+</html>

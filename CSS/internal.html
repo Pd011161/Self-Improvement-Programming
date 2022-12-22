@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3-Internal</title>
+    <!-- เขียนแบบembedเป็นการเขียนselectorในส่วนhead-->
+    <style>
+        p.embed{
+            font-style: italic;
+            color: red;
+        }
+    </style>
+    <!-- External link = linkไฟล์CSSเข้ามาใช้กับไฟล์HTML -->
+    <link rel="stylesheet" href="style-external.css">
+</head>
+<body>
+    <h1 align="center">CSS Internal</h1>
+    <h2>คือการเขียนCSSภายในไฟล์HTMLโดยตรงมีวิธีเขียน2แบบ</h2>
+    <h2>1.Inline</h2>
+    <!-- การเขียนแบบinlineเป็นการเขียนCSSลงในtagของHTMLได้เลย,เราสามารถระบุคุณสมบัติหลายอย่างผ่าน""ได้-->
+    <p style="color:royalblue ; font-weight: bold ; font-size: 50px; ">Predee Chaiyakit</p>
+    <!-- Embed -->
+    <h2>2.Embed</h2>
+    <p class="embed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam optio voluptate quod quos possimus voluptatum tempora, provident nam quas nobis laudantium temporibus eos, veritatis vel, nesciunt incidunt aliquam hic? Molestiae.</p>
+    <br>
+    <hr>
+    <br>
+    <!-- External -->
+    <h1 align="center">CSS External</h1>
+    <h2>คือการเขียนไฟล์CSSแยกจากไฟล์HTMLแล้วค่อยนำมาLinkกัน</h2>
+    <p class="external">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dolor voluptatem obcaecati accusamus error numquam nulla. Veniam labore eius sed inventore dolorem blanditiis voluptate. Labore nostrum molestiae sint dolor mollitia?</p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+/* CSS External = การเขียนไฟล์CSSแยกจากไฟล์HTML แล้วค่อยไปLinkทำงานด้วยกัน */
+.external{
+    color:rgb(246, 16, 169);
+    font-style: italic; 
+}
