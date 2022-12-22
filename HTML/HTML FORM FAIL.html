@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form : ลงทะเบียน</title>
+    <style>
+        form{
+            border:2px solid blue;
+        }
+        input{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">แบบฟอร์มลงทะเบียน</h1>
+    <!-- htmlfrom = ผู้ใช้กรอกข้อมูล -->
+    <from> <!-- from = ฟอร์มกรอกข้อมูล -->
+        <h2>ส่วนของ input </h2>
+        <!--type text -->
+        <div>
+            <lable for = "firstname">ชื่อจริง</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นชื่อจริง -->
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ(ภาษาไทย)" required> <!-- input = กล่องรับinput , placeholder = คำอธิบายในช่อง , required = บังคับให้กรอกไม่งั้นจะส่งฟอร์มไม่ได้-->
+        </div>
+
+        <div>
+            <lable for = "lasttname">นามสกุล</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นนามสกุล -->
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ(ภาษาไทย)" required> <!-- input = กล่องรับinput , placeholder = คำอธิบายในช่อง , required = บังคับให้กรอกไม่งั้นจะส่งฟอร์มไม่ได้ -->
+        </div>
+
+        <div>
+            <lable for = "email">Email</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นEmail -->
+            <input type="text" name="email" placeholder="ป้อนEmailของคุณ" required> <!-- input = กล่องรับinput , placeholder = คำอธิบายในช่อง , required = บังคับให้กรอกไม่งั้นจะส่งฟอร์มไม่ได้ -->
+        </div>
+
+        <div>
+            <lable for = "life">สภาพ</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นสภาพ -->
+            <input type="text" name="life" value="มีชิวิต" readonly> <!-- input = กล่องรับinput , placeholder = คำอธิบายในช่อง , readonly = อ่านได้อย่างเดียวแก้ไขไม่ได้ -->
+        </div>
+        
+        <!-- type password -->
+        <div>
+            <lable for = "password">รหัสผ่าน</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นรหัสผ่าน -->
+            <input type="password" name="password" placeholder="ป้อนรหัสEmailของคุณ"> <!-- input = กล่องรับinput , placeholder = คำอธิบายในช่อง-->
+        </div>
+        <!-- textarea -->
+        <div>
+            <lable for = "locations">ที่อยู่</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นที่อยู่ -->
+            <br>
+            <textarea name="locations" cols="20" rows="5"></textarea> <!-- textarea = กล่องใส่ข้อความ , clos และ rows ใช้กำหนดขนาด-->
+        </div>
+        <!-- type number -->
+        <div>
+            <lable for = "age">อายุ</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นอายุ -->
+            <input type="number" name="age" min="1" max="10" value="1"> <!-- input = กล่องรับinput , type number = ใส่่ตัวเลข , min = ค่าต่ำสุด , max = ค่าสูงสุด , value = fixค่าไว้เลย-->
+        </div>
+        <!-- type date -->
+        <div>
+            <lable for = "birthday">วันเกิด</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นวันเกิด -->
+            <input type="date" name="bday"> <!-- input = กล่องรับinput , type date = ใส่ปฏิทิน , placeholder = คำอธิบายในช่อง -->
+        </div>
+        <!-- type tell-->
+        <div>
+            <lable for = "phone">เบอร์โทรศัพท์</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นรหัสผ่าน -->
+            <input type="tell" name="phone" placeholder="ป้อนเบอร์ของคุณ(ตัวเลข)"> <!-- input = กล่องรับinput , type tell = ใส่เบอร์โทร , placeholder = คำอธิบายในช่อง -->
+        </div>
+        <!-- type color -->
+        <div>
+            <lable for = "color">สีที่ชอบ</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นสีที่ชอบ -->
+            <input type="color" name="color"> <!-- input = กล่องรับinput , type color = ใส่สี -->
+        </div>
+        <!-- type range -->
+        <div>
+            <lable for = "rangenumber">ระดับ</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นช่วงตัวเลข -->
+            <input type="range" name="rangenumber" value="1"> <!-- input = กล่องรับinput , type range = มีช่องให้รูดซ้ายขวาไว้บอกระดับ , value = กำหนดค่าเริ่มต้น -->
+        </div>
+        <hr>
+        <h2>ส่วนของตัวเลือก</h2>
+        <!-- select -->
+        <div>
+            <lable for="edu">ระดับการศึกษา</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นระดับการศึกษา -->
+            <select name="edu" id=""> <!-- select = ใส่ตัวเลือกให้lableด้านบน ซึ่งตัวเลือกจะถูกระบุโดย option  -->
+                <option value="มัธยม">มัธยมศึกษา</option>
+                <option value="ปตรี" selected>ปริญญาตรี</option> <!-- selected = กำหนดค่าเริ่มต้นของการเลือก -->
+                <option value="ปโทร">ปริญญาโทร</option>
+                <option value="ปเอก">ปริญญาเอก</option>
+            </select>
+        </div>
+        <!-- radio -->  
+        <div>
+            <lable for = "gander">เพศ:</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นเพศ -->
+            <input type="radio" name="gander">เพศชาย <!-- radio1 = การเลือก1อย่างในประเภทเดียวกัน โดยประเภทจะกำหนดผ่านname กำหนดradio1เป็นgander-->
+            <input type="radio" name="gander">เพศหญิง 
+            <input type="radio" name="gander">เพศLGBT
+            <input type="radio" name="hair">ผมสั่น <!-- radio2 = การเลือก1อย่างในประเภทเดียวกัน โดยประเภทจะกำหนดผ่านname กำหนดradio2เป็นdo-->
+            <input type="radio" name="hair">ผมยาว
+           <br>
+           <input type="radio" name="">ข้าวผัด <!-- radio3 = การเลือก1อย่างในประเภทเดียวกัน โดยประเภทจะกำหนดผ่านname ลองไม่กำหนดradio3,4,5 = การแยกประเภท radioทั้ง3ตัวนี้จะไม่ได้อยู่ในประเภทเดียวกัน ดังนั้นจึงสามารถเลือกได้ทั้ง3ตัวเลือก -->
+           <input type="radio" name="">ไก่ทอด <!-- radio4 -->
+           <input type="radio" name="">ไข่ดาว <!-- radio5 -->
+        </div>
+        <!-- checkbox -->
+        <div>
+            <lable for = "ability">ความสามารถ:</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นความสามารถ -->
+            <input type="checkbox" name="ability">เขียนweb <!-- input = กล่องรับinput , type checkbox = ตัวเลือกที่สามารถเลือกได้>1ตัวเลือก -->
+            <input type="checkbox" name="ability">เขียนapp
+            <input type="checkbox" name="ability">ซ่อมคอมพิวเตอร์
+        </div>
+        <!-- file -->
+        <div>
+            <lable for="file">แนบเอกสาร</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นแนบเอกสาร -->
+            <input type="file"> <!-- input type file = ช่องใส่ไฟล์ -->
+        </div>
+        <!-- url -->
+        <div>
+            <lable for="url">website</lable> <!-- lable = ป้ายชื่อด้านหน้าเป็นwebsite -->
+            <input type="url"> <!-- input type url = ช่องใส่url -->
+        </div>
+        <!-- submit -->
+        <div>
+            <input type="submit" value="บันทึกข้อมูล"> <!-- input type submit = ปุุ่่มsubmit กำหนดชื่อปุ่มด้วย value -->
+            <button type="submit">submit</button> <!-- button = ปุ่ม type submit = ปุ่มsubmit-->
+            <input type="reset" value="ล้างข้อมูล"> <!-- input type reset = ปุ่มreset กำหนดชื่อปุ่มด้วย value -->
+            <button type="reset">reset</button> <!-- button = ปุ่ม type reset = ปุ่มreset-->
+        </div>
+    </from>
+</body>
+</html>

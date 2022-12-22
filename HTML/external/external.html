@@ -1,0 +1,121 @@
+<!-- 16/04/2022 : 4hr. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>externals : การแสดงแบบlist</h1>
+    <hr>
+    <h1>แบบ ol</h1> <!-- แสดงผลแบบลำดับตามตัวเลขและตัวอักษร -->
+    <h2>external1</h2>
+    <ol> <!-- แสลงลำดับแบบตัวเลข -->
+        <li>แมว</li> <!-- 1. -->
+        <li>หมา</li> <!-- 2. -->
+        <li>ปลา</li> <!-- 3. -->
+    </ol>
+
+    <h2>external2</h2> 
+    <ol type="A"> <!-- แสดงลำดับตามA-Z -->
+        <li>แมว</li> <!-- A. -->
+        <li>หมา</li> <!-- B. -->
+        <li>ปลา</li> <!-- C. -->
+    </ol>
+
+    <h2>external3</h2>
+    <ol type="a"> <!-- แสดงลำดับตามa-z -->
+        <li>แมว</li> <!-- a. -->
+        <li>หมา</li> <!-- b. -->
+        <li>ปลา</li> <!-- c. -->
+    </ol>
+
+    <h2>external4</h2>
+    <ol type="I"> <!-- แสดลงลำดับตามเลขโรมัน -->
+        <li>แมว</li> <!-- I. -->
+        <li>หมา</li> <!-- II. -->
+        <li>ปลา</li> <!-- III. -->
+    </ol>
+    <hr>
+    <h1>แบบ ul</h1> <!-- แสดงผลแบบลำดับตามสัญลักษณ์-->
+    <h2>external1</h2>
+    <ul type="square"> <!-- แสดงลำดับแบบสี่เหลี่ยมทึบ -->
+        <li>แมว</li>
+        <li>หมา</li>
+        <li>ปลา</li>
+    </ul>
+
+    <h2>external2</h2>
+    <ul type="disc"> <!-- แสดงลำดับแบบวงกลมทึบ -->
+        <li>แมว</li>
+        <li>หมา</li>
+        <li>ปลา</li>
+    </ul>
+
+    <h2>external3</h2>
+    <ul type="circle"> <!-- แสดงลำดับแบบวงกลมใส -->
+        <li>แมว</li>
+        <li>หมา</li>
+        <li>ปลา</li>
+    </ul>
+    <hr>
+    <h1>แบบผสม ol & ul</h1>
+    <h2>external1</h2>
+    <ol type="1"> <!-- แสดงลำดับนอกแบบตัวเลข -->
+        <li>แมว
+            <ul type="square"> <!-- แสดงลำดับในแบบสี่เหลี่ยมทึบ -->
+                <li>แมวคุณหนู</li>
+                <li>แมวแสบ</li>
+                <li>แมวพุ๊ก</li>
+            </ul>
+        </li>
+
+        <li>หมา
+            <ul type="cricle"> <!-- แสดงลำดับในแบบวงกลมใส -->
+                <li>หมาหมู่</li>
+                <li>หมาหม๊า</li>
+                <li>หมาถึง</li>
+            </ul>
+        </li>
+
+        <li>ปลา
+            <ul type="disc"> <!-- แสดงลำดับในแบบวงกลมทึบ -->
+            <li>ปลาท่องโก๋</li>
+            <li>ปลาปล๊า</li>
+            <li>ปลาจิงโกะ</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>external2</h2>
+    <ul> <!-- แสดงลำดับนอกแบบสัญลักษณ์ -->
+        <li>แมว
+        <ol> <!-- แสดงลำดับนอกแบบตัวเลข -->
+            <li>แมวคุณหนู</li> 
+            <li>แมวแสบ</li>
+            <li>แมวพุ๊ก</li>
+        </ol>
+        </li>
+
+        <li>หมา
+        <ol type="A"> <!-- แสดงลำดับในแบบA-Z -->
+            <li>หมาหมู่</li>
+            <li>หมาหม๊า</li>
+            <li>หมาถึง</li>
+        </ol>
+        </li>
+
+        <li>ปลา
+        <ol type="I"> <!-- แสดงลำดับในแบบโรมัน -->
+            <li>ปลาท่องโก๋</li>
+            <li>ปลาปล๊า</li>
+            <li>ปลาจิงโกะ</li>
+        </ol>
+        </li>
+    </ul>
+    <hr>
+    <a href="../index.html">กลับไปหน้าindex</a> <!-- linkด้วยตัวอักษร(externalต้องออกก่อนถึงจะไปที่ไฟล์อีกfoderได้ต้องเติม ../ ) -->
+</body>
+</html>
